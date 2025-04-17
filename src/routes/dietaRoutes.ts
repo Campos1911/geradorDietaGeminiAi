@@ -5,7 +5,15 @@ export default async function dietaRoutes(app: FastifyInstance) {
   app.post(
     "/gerar",
     async (
-      req: FastifyRequest<{ Body: { text: string } }>,
+      req: FastifyRequest<{
+        Body: {
+          peso: number;
+          altura: number;
+          idade: number;
+          focoDieta: string;
+          sexo: string;
+        };
+      }>,
       reply: FastifyReply
     ) => {
       return new dietaController().generateDieta(req, reply);

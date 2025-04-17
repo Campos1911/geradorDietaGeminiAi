@@ -3,5 +3,9 @@ POST http://localhost:3333/gerar
 Content-Type: application/json
 
 {
-    "text": "Qual é a capital do Brasil?"
+    "peso": 120,
+    "altura": 190,
+    "idade": 21,
+    "sexo": "masculino",
+    "focoDieta": "emagrecimento"
 }
