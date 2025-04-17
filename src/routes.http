@@ -1,0 +1,7 @@
+### Criar dieta
+POST http://localhost:3333/gerar
+Content-Type: application/json
+
+{
+    "text": "Qual é a capital do Brasil?"
+}
