@@ -5,12 +5,10 @@ dotenv.config();
 
 export const geminiIA = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-export async function main() {
+export async function geminiResp({ prompt }: { prompt: string }) {
   const response = await geminiIA.models.generateContent({
     model: "gemini-2.0-flash",
-    contents: "Explain how AI works in a few words",
+    contents: prompt,
   });
-  console.log(response.text);
+  return response.text;
 }
-
-main();
