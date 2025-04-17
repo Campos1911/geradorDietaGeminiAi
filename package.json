@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --watch src/index.ts"
+    "dev": "tsx --watch src/index.ts",
+    "teste": "tsx src/config/mailer.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@fastify/cors": "^11.0.1",
+    "dotenv": "^16.5.0",
     "fastify": "^5.3.0",
     "nodemailer": "^6.10.1"
   }
