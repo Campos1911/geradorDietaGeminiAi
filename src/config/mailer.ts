@@ -5,7 +5,7 @@ import { MailOptions } from "../models/mailOptionsModel";
 dotenv.config();
 
 export class Nodemailer {
-  enviarEmail({ from, to, subject, text, html }: MailOptions) {
+  enviarEmail({ to, subject, text, html }: MailOptions) {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -15,7 +15,7 @@ export class Nodemailer {
     });
 
     let mailOptions = {
-      from: from,
+      from: "Anthoni Campos <anthonithomes2@gmail.com>",
       to: to,
       subject: subject,
       text: text,
