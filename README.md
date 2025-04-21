@@ -49,19 +49,3 @@ Este projeto é um gerador de dietas personalizado que utiliza a API do Gemini A
 2. Siga as instruções no terminal para fornecer seus dados pessoais.
 
 3. O sistema irá gerar e exibir um plano alimentar personalizado com base nas informações fornecidas.
-
-## 📁 Estrutura do Projeto
-
-```
-geradorDietaGeminiAi/
-├── src/
-│   ├── index.ts
-│   ├── services/
-│   │   └── geminiService.ts
-│   └── utils/
-│       └── dietGenerator.ts
-├── .gitignore
-├── package.json
-├── tsconfig.json
-└── yarn.lock
-```
